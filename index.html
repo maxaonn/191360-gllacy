@@ -3,12 +3,13 @@
 	<head>
 		<meta charset="utf-8">
 		<title>HTML Academy: Глейси</title>
+		<link href="css/style.css" rel="stylesheet">
  	</head>
 	<body>
 		<header class="site-header">
 			<div class="container">
 				<div class="logo">
-					<img alt="Gllacy Shop" src="/img/logo.png" width="154" height="64">
+					<a><img alt="Gllacy Shop" src="img/header-logo.png" width="154" height="64"></a>
 				</div>
 				<nav class="site-navigation">
 					<ul>
@@ -33,21 +34,21 @@
 					</ul>
 				</div>
 				<div class="header-contacts">
-					<p class="opening-hours">С 10 до 20, ежедневно</p>
-					<p class="tel">8 812 450-25-25</p>
+					<p class="header-opening-hours">С 10 до 20, ежедневно</p>
+					<p class="header-tel">8 812 450-25-25</p>
 				</div>
 			</div>
 		</header>
 		<main class="container">
 			<div class="index-slider">
 				<div class="slider-item">
-					<b>Крем-брюле и пломбир с малиновым джемом</b>
+					<h1 class="slider-heading">Крем-брюле и пломбир с малиновым джемом</h1>
 				</div>
 				<!--<div class="slider-item">
-					<b>Шоколадный пломбир и лимонный сорбет</b>
+					<h1 class="slider-heading">Шоколадный пломбир и лимонный сорбет</h1>
 				</div>
 				<div class="slider-item">
-					<b>Пломбир с помадкой и клубничный щербет</b>
+					<h1 class="slider-heading">Пломбир с помадкой и клубничный щербет</h1>
 				</div>-->
 				<div class="slider-controls"></div>
 				<a class="btn" href="#">Давайте оба!</a>
@@ -66,28 +67,32 @@
 			</section>
 			<section class="popular-items">
 				<article class="catalog-item">
-					<img src="/img/orange.jpg" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой" width="267" height="267">
+					<img src="img/hit.jpg" alt="Хит" width="61" height="61">
+					<img src="img/orange.jpg" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой" width="267" height="267">
 					<p class="price"><strong>310 &#8381;</strong>/кг</p>
 					<p class="description">Сливочное с апельсиновым джемом и цитрусовой стружкой</p>
 				</article>
 				<article class="catalog-item">
-					<img src="/img/coffee.jpg" alt="Сливочно-кофейное с кусочками шоколада" width="267" height="267">
+				<img src="img/hit.jpg" alt="Хит" width="61" height="61">
+					<img src="img/coffee.jpg" alt="Сливочно-кофейное с кусочками шоколада" width="267" height="267">
 					<p class="price"><strong>380 &#8381;</strong>/кг</p>
 					<p class="description">Сливочно-кофейное с кусочками шоколада</p>
 				</article>
 				<article class="catalog-item">
-					<img src="/img/strawberry.jpg" alt="Сливочно-клубничное с присыпкой из белого шоколада" width="267" height="267">
+				<img src="img/hit.jpg" alt="Хит" width="61" height="61">
+					<img src="img/strawberry.jpg" alt="Сливочно-клубничное с присыпкой из белого шоколада" width="267" height="267">
 					<p class="price"><strong>355 &#8381;</strong>/кг</p>
 					<p class="description">Сливочно-клубничное с присыпкой из белого шоколада</p>
 				</article>
 				<article class="catalog-item">
-					<img src="/img/caramel.jpg" alt="Сливочное крем-брюле с карамельной подливкой" width="267" height="267">
+					<img src="img/hit.jpg" alt="Хит" width="61" height="61">
+					<img src="img/caramel.jpg" alt="Сливочное крем-брюле с карамельной подливкой" width="267" height="267">
 					<p class="price"><strong>415 &#8381;</strong>/кг</p>
 					<p class="description">Сливочное крем-брюле с карамельной подливкой</p>
 				</article>
 			</section>
 			<section class="features">
-				<h2>Магазин Глейси — это онлайн и офлайн магазин по продаже мороженого собственного производства на развес</h2>
+				<p><b>Магазин Глейси — это онлайн и офлайн магазин по продаже мороженого собственного производства на развес</b></p>
 				<div class="features-item">
 					<p>Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</p>
 				</div>
@@ -101,16 +106,20 @@
 					<p>Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</p>
 				</div>
 			</section>
-			<section class="blog-news">
-				<h3>Новое в нашем блоге</h3>
-				<p class="blog-news-name">10 способов сервировки фруктовых щербетов к столу</p>
-			</section>
-			<section class="subscribe">
-				<p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =) </p>
-				<form class="subscription" method="post">
-					<input type="text" name="email" value="" placeholder="Электронная почта">
-					<button class="btn" type="submit">Отправить</button>
-				</form>
+			<section class="blog-n-subscribe">
+				<div class="blog-news">
+					<h4>Новое в нашем блоге</h4>
+					<span class="blog-news-name"><a href="#">10 способов сервировки фруктовых щербетов к столу</a></span>
+				</div>
+				<div class="subscribe">
+					<p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =) </p>
+					<div class="subscribe-form">
+						<form method="post">
+							<input type="text" name="email" value="" placeholder="Электронная почта">
+							<button class="btn" type="submit">Отправить</button>
+						</form>
+					</div>
+				</div>
 			</section>
 			<section class="location">
 				<div class="location-details">
@@ -129,24 +138,24 @@
 		</main>
 		<footer class="site-footer">
 			<div class="container">
-				<section class="footer-social">
+				<div class="footer-social">
 					<a class="social-btn social-btn-twit" href="#">Twitter</a>
 					<a class="social-btn social-btn-inst" href="#">Instagram</a>
 					<a class="social-btn social-btn-fb" href="#">Facebook</a>
 					<a class="social-btn social-btn-vk" href="#">Вконтакте</a>
-				</section>
-				<section class="footer-menu">
+				</div>
+				<div class="footer-menu">
 					<ul>
 						<li><a href="#">Для поставщиков</a></li>
 						<li><a href="#">О производстве</a></li>
 						<li><a href="#">Наши документы</a></li>
 						<li><a href="#">Экологические стандарты</a></li>
 					</ul>
-				</section>
-				<section class="footer-copyright">
-					<a href="https://htmlacademy.ru/intensive/htmlcss" title="_blank"><img src="htmlacademy-logo.png" alt="HTML Academy" width="108" height="38"></a>
+				</div>
+				<div class="footer-copyright">
+					<a href="https://htmlacademy.ru/intensive/htmlcss" title="_blank"><img src="img/htmlacademy-logo.png" alt="HTML Academy" width="108" height="38"></a>
 					<p>Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss" target=_blank>HTML Academy</a> &#169; 2017</p>
-				</section>
+				</div>
 			</div>
 		</footer>
 	</body>
