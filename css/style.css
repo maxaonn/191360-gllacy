@@ -7,6 +7,176 @@ body {
 	font-weight: 400;
 }
 
+.site-header {
+	min-height: 115px;
+	margin-bottom: 285px;
+}
+
+.page-header {
+	min-height: 115px;
+	margin-bottom: -20px;
+}
+
+.container {
+	width: 1146px;
+	margin: 0 auto;
+	padding: 0 27px;
+}
+
+.clearfix::after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.header-logo {
+	float: left;
+	width: 154px;
+}
+
+.site-navigation {
+	float: left;
+	width: 530px;
+}
+
+.user-block {
+	float: right;
+	width: 265px;
+	margin-bottom: 20px;
+}
+
+.index-slider {
+	min-height: 215px;
+	margin-bottom: 40px;
+}
+
+.promo {
+	margin-bottom: 40px;
+}
+
+.promo-banner-raspberry {
+	float: left;
+	width: 560px;
+	min-height: 229px;
+}
+
+.promo-banner-chocolate {
+	float: right;
+	width: 560px;
+	min-height: 229px;
+}
+
+.popular-items {
+	margin-bottom: 40px;
+}
+
+.catalog-item {
+	float: left;
+	width: 267px;
+	min-height: 325px;
+	margin-right: 26px;
+}
+
+.popular-items .catalog-item:last-child,
+.catalog .catalog-item:nth-child(4n) {
+	margin-right: 0;
+}
+
+.features {
+	margin-bottom: 40px;
+	padding: 30px 20px;
+}
+
+.features-item {
+	float: left;
+	width: 480px;
+	padding-top: 15px;
+	padding-left: 55px;
+}
+
+.features-item-tight {
+	float: right;
+}
+
+.blog-n-subscribe {
+	margin-bottom: 40px;
+}
+
+.blog-news {
+	float: left;
+	box-sizing: border-box;
+	width: 560px;
+	min-height: 220px;
+	padding-top: 25px;
+	padding-right: 255px;
+	padding-left: 20px;
+	padding-bottom: 25px;
+}
+
+.subscribe {
+	float: right;
+	box-sizing: border-box;
+	width: 560px;
+	min-height: 220px;
+	padding: 35px 25px;
+}
+
+.location {
+	width: 1200px;
+	min-height: 428px;
+	margin: 0 auto;
+}
+
+.location-details {
+	float: right;
+	width: 302px;
+	height: 305px;
+	box-sizing: border-box;
+	margin-right: 27px;
+	margin-top: auto;
+	margin-bottom: auto;
+	padding: 30px 25px;
+}
+
+.breadcrumds {
+	margin-bottom: 10px;
+}
+
+.filter {
+	margin-bottom: 40px;
+}
+
+.catalog {
+	margin-bottom: 80px;
+}
+
+.pagination {
+	float: right;
+	width: 267px;
+	min-height: 30px;
+}
+
+.site-footer {
+	min-height: 85px;
+	margin-top: 20px;
+}
+
+.footer-social {
+	float: left;
+	width: 267px;
+	margin-right: 130px;
+}
+
+.footer-menu {
+	float: left;
+	width: 455px;
+}
+
+.footer-copyright {
+	float: right;
+	width: 190px;
+}
+
 h1 {
 	font-size: 35px;
 	line-height: 41px;
