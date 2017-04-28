@@ -7,14 +7,41 @@ body {
 	font-weight: 400;
 }
 
-.site-header {
-	min-height: 115px;
-	margin-bottom: 285px;
+h1 {
+	font-size: 35px;
+	line-height: 41px;
+	font-weight: 400;
 }
 
-.page-header {
-	min-height: 115px;
-	margin-bottom: -20px;
+h2 {
+	font-size: 35px;
+	line-height: 41px;
+}
+
+h3 {
+	font-size: 24px;
+	line-height: 30px;
+	color: #323232;
+}
+
+h4 {
+	color: #323232;
+	font-size: 16px;
+	line-height: 22px;
+}
+
+a {
+	color: #ffffff;
+}
+
+.site-header {
+	min-height: 75px;
+	margin-bottom: 25px;
+	font-size: 0px;
+}
+
+.site-header ul {
+	list-style: none;
 }
 
 .container {
@@ -37,17 +64,63 @@ body {
 .site-navigation {
 	float: left;
 	width: 530px;
+	font-size: 16px;
+	line-height: 18px;
+}
+
+.site-navigation li {
+	display: inline-block;
+	margin-right: 28px;
 }
 
 .user-block {
+	position: relative;
 	float: right;
 	width: 265px;
 	margin-bottom: 20px;
+	font-size: 16px;
+	line-height: 18px;
+}
+
+.user-block li {
+	display: inline-block;
+	margin-right: 10px
+}
+
+.user-block li:last-child {
+	margin-right: 0;
+}
+
+.header-contacts {
+	position: absolute;
+	top: 50px;
+	right: 0;
+	width: 170px;
+	text-align: right;
+}
+
+.header-contacts .header-opening-hours {
+	margin: 0;
+	font-size: 14px;
+	line-height: 16px;
+}
+
+.header-contacts .header-tel {
+	margin: 0;
+	font-size: 22px;
+	line-height: 24px;
 }
 
 .index-slider {
 	min-height: 215px;
+	margin-top: 325px;
 	margin-bottom: 40px;
+}
+
+h1 .slider-heading {
+	font-size: 60px;
+	line-height: 60.35px;
+	font-weight: 700;
 }
 
 .promo {
@@ -56,14 +129,24 @@ body {
 
 .promo-banner-raspberry {
 	float: left;
-	width: 560px;
+	width: 520px;
 	min-height: 229px;
+	padding-left: 20px;
+	padding-right: 20px;
+	background-color: #9e0d32;
+	background: url("../img/raspberry-background.jpg") -50px -95px;
+	border-radius: 10px;
 }
 
 .promo-banner-chocolate {
 	float: right;
-	width: 560px;
+	width: 520px;
 	min-height: 229px;
+	padding-left: 20px;
+	padding-right: 20px;
+	background-color: #5b321e;
+	background: url("../img/chocolate-background.jpg") -218px -103px;
+	border-radius: 10px;
 }
 
 .popular-items {
@@ -85,6 +168,10 @@ body {
 .features {
 	margin-bottom: 40px;
 	padding: 30px 20px;
+	background-color: #f0e5d1;
+	background-image: url("../img/waffle-background.jpg");
+	border-radius: 10px;
+	color: #323232;
 }
 
 .features-item {
@@ -111,6 +198,16 @@ body {
 	padding-right: 255px;
 	padding-left: 20px;
 	padding-bottom: 25px;
+	background-color: #ffffff;
+	background-image: url("../img/strawberry-background.jpg");
+	background-position: -25px -225px;
+	border-radius: 10px;
+}
+
+.blog-news a {
+	color: #323232;
+	font-size: 24px;
+	line-height: 30px;
 }
 
 .subscribe {
@@ -119,12 +216,22 @@ body {
 	width: 560px;
 	min-height: 220px;
 	padding: 35px 25px;
+	background-color: #f8f7f4;
+	color: #5a5a5a;
+	border-radius: 10px;
+}
+
+.subscribe input {
+	width: 365px;
 }
 
 .location {
 	width: 1200px;
 	min-height: 428px;
 	margin: 0 auto;
+	background-color: #ffffff;
+	background-image: url("../img/map.jpg");
+	background-position: -25px -110px;
 }
 
 .location-details {
@@ -132,18 +239,59 @@ body {
 	width: 302px;
 	height: 305px;
 	box-sizing: border-box;
-	margin-right: 27px;
-	margin-top: auto;
-	margin-bottom: auto;
+	margin-bottom: 63px;
+	margin-top: 63px;
 	padding: 30px 25px;
+	background-color: #ffffff;
+	color: #323232;
+	border-radius: 10px;
+}
+
+.location-details a {
+	color: #323232;  /*временно*/
 }
 
 .breadcrumds {
+	margin: 0;
 	margin-bottom: 10px;
 }
 
 .filter {
+	margin: 0;
 	margin-bottom: 40px;
+}
+
+.filter-sorting {
+	display: inline-block;
+	vertical-align: top;
+	width: 194px;
+	margin-right: 16px;
+}
+
+.filter-price {
+	display: inline-block;
+	vertical-align: top;
+	width: 218px;
+	margin-right: 16px;
+}
+
+.filter-fat-content {
+	display: inline-block;
+	vertical-align: top;
+	width: 415px;
+}
+
+.filter-filling {
+	display: inline-block;
+	vertical-align: top;
+	width: 702px;
+}
+
+.filter-button {
+	display: inline-block;
+	margin: 0;
+	width: 145px;
+	vertical-align: bottom;
 }
 
 .catalog {
@@ -152,56 +300,85 @@ body {
 
 .pagination {
 	float: right;
-	width: 267px;
+	width: 300px;
 	min-height: 30px;
+	margin-bottom: 30px;
+	font-size: 0;
+	text-align: right;
 }
 
-.site-footer {
+.pagination ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.pagination li {
+	display: inline-block;
+	min-width: 25px;
+	height: 25px;
+	margin: 0;
+	margin-right: 2px;
+	font-size: 16px;
+	line-height: 25px;
+	text-align: center;
+	vertical-align: middle;
+	border-radius: 50%;
+}
+
+.pagination a {
+	text-decoration: none;
+}
+
+.pagination li:first-child {
+	text-indent: -10000px;
+	margin-right: 4px;
+	background: url("../img/arrows.png") no-repeat 6px 5px;
+}
+
+.pagination li:last-child {
+	text-indent: -10000px;
+	margin-left: 2px;
+	background: url("../img/arrows.png") no-repeat 9px -18px;
+}
+
+.site-footer .container {
+	display: flex;
 	min-height: 85px;
 	margin-top: 20px;
 }
 
 .footer-social {
-	float: left;
-	width: 267px;
-	margin-right: 130px;
+	width: 200px;
+	margin-right: 180px;
+	/*временные стили*/
+	font-size: 12px;
+	line-height: 18px;
 }
 
 .footer-menu {
-	float: left;
-	width: 455px;
+	width: 416px;
+	font-size: 13px;
+	line-height: 18px;
+}
+
+.footer-menu ul {
+	padding: 0;
+	list-style: none;
+}
+
+.footer-menu li {
+	display: inline-block;
+	width: 180px;
 }
 
 .footer-copyright {
-	float: right;
-	width: 190px;
+	width: 200px;
+	margin-left: auto;
+	font-size: 12px;
+	line-height: 18px;
 }
 
-h1 {
-	font-size: 35px;
-	line-height: 41px;
-	font-weight: 400;
-}
-
-h1 .slider-heading {
-	font-size: 60px;
-	line-height: 60.35px;
-	font-weight: 700;
-}
-
-h2 {
-	font-size: 35px;
-	line-height: 41px;
-}
-
-h3 {
-	font-size: 24px;
-	line-height: 30px;
-	color: #323232;
-}
-
-h4 {
-	color: #323232;
-	font-size: 16px;
-	line-height: 22px;
+.footer-copyright p {
+	margin: 0;
 }
