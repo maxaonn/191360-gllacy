@@ -1,4 +1,4 @@
-body {
+﻿body {
 	padding: 0;
 	margin: 0;
 	background-color: #849d8f; /*зеленый: #849d8f  серый #8996a6 коричневый #9d8b84 */
@@ -103,8 +103,7 @@ a:active {
 	text-decoration: none;
 }
 
-.site-navigation li a:hover,
-.site-navigation li .for-testing {   /*УБРАЬТ*/
+.site-navigation li a:hover {   
 	background-color: #f7f6f3;
 	color: #333333;
 }
@@ -130,6 +129,7 @@ a:active {
 	padding: 5px 0;
 	background-color: #f8f7f4;
 	border-radius: 5px;
+    box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4);
 }
 
 .site-navigation .navigation-submenu li {
@@ -164,8 +164,8 @@ a:active {
 }
 
 .site-navigation .navigation-submenu li:first-child a {
-	padding-top: 6px;
-	padding-bottom: 15px;
+	padding-top: 10px;
+	padding-bottom: 10px;
 	border-bottom: 1px solid #d1d0ce;
 	font-weight: 700;
 }
@@ -246,6 +246,10 @@ a:active {
 	background-repeat: no-repeat;
 }
 
+.btn-empty-bag:hover { 
+  color: #ffffff;
+}
+
 .btn-full-bag {
 	background-color: #f7f6f3;
 	background-image: url("../img/bag-full-icon.png");
@@ -254,8 +258,13 @@ a:active {
 	color: #323232;
 }
 
-.user-block li .hidden {
-	display: none;
+.hidden {   
+	position: absolute;
+    left: -10000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
 }
 
 .header-contacts {
@@ -391,7 +400,7 @@ a:active {
 	border: none;
 	border-radius: 20px;
 	cursor: pointer;
-	box-shadow: 0 2px 2px rgba(172, 16, 0, 0.64);
+	box-shadow: 0 2px 2px rgba(85, 8, 0, 0.54);
 	font-family: "Roboto", "Arial", sans-serif;
 	font-size: 18px;
 	line-height: 24px;
@@ -400,12 +409,15 @@ a:active {
 }
 
 .btn:hover {
+	background-image: linear-gradient(to top, #ec6f5e, #f58669);
+	box-shadow: 0 1px 2px rgba(172, 16, 0, 1);
 	color: #ffffff;
+
 }
 
 .btn:active {
-	background-image: linear-gradient(to bottom, #e74a35, #f26843);
-	box-shadow: 0 2px 2px rgba(172, 16, 0, 0.64) inset;
+	background-image: linear-gradient(to bottom, #d74531, #e1613e);
+	box-shadow: 0 2px 2px rgba(148, 39, 24, 1) inset;
 }
 
 
@@ -418,6 +430,7 @@ a:active {
 	font-size: 32px;
 	line-height: 44px;
 	text-shadow: rgba(160, 32, 11, 0.76) 0 2px 5px;
+	box-shadow: 0 2px 2px rgba(172, 16, 0, 0.64);
 }
 
 .promo {
@@ -470,6 +483,7 @@ a:active {
 	width: 267px;
 	min-height: 325px;
 	margin-right: 26px;
+    text-align: center;
 }
 
 .catalog .catalog-item {
@@ -501,7 +515,7 @@ a:active {
 	margin: 0;
 	padding: 0;
 	padding-top: 15px;
-	text-align: center;
+	
 }
 
 .underlined {
@@ -517,6 +531,20 @@ a.underlined:active {
 .catalog-item .price strong {
 	font-size: 45px;
 	font-weight: 500;
+}
+
+.catalog-item .btn {
+    display: none;
+    position: absolute;
+    bottom: -60px;
+    right: 30px;
+    z-index: 20;
+    margin-top: 20px;
+}
+
+.catalog-item:hover .btn,
+.catalog-item.hover .btn{
+    display: block;
 }
 
 .features {
@@ -689,11 +717,37 @@ a.underlined:active {
 	margin-bottom: 40px;
 }
 
+.filter fieldset {
+  background: rgba(255, 255, 255, 0.2);
+  border: 0;
+  border-radius: 25px;
+  text-align: center;
+}
+
+.filter legend {
+  text-align: left;
+}
+
 .filter-sorting {
 	display: inline-block;
 	vertical-align: top;
 	width: 194px;
 	margin-right: 16px;
+}
+
+.filter-sorting select {
+  width: 100%;
+  border-radius: 25px;
+  background: transparent;
+  color: #ffffff;
+  font-family: inherit;
+  font-size: inherit;
+}
+
+.filter-sorting select:hover {
+  background: #ffffff;
+  color: #323232;
+
 }
 
 .filter-price {
@@ -715,11 +769,32 @@ a.underlined:active {
 	width: 702px;
 }
 
-.filter-button {
-	display: inline-block;
+.filter-btn {
+    display: inline-block;
 	margin: 0;
-	width: 145px;
-	vertical-align: bottom;
+    width: 145px;
+    padding: 10px 23px;
+	vertical-align: middle;
+	color: #ffffff;
+	background-color: rgba(255, 255, 255, 0.2);
+	border: 2px solid #ffffff;
+	border-radius: 20px;
+	cursor: pointer;
+	font-family: "Roboto", "Arial", sans-serif;
+	font-size: 18px;
+	line-height: 24px;
+	font-weight: 400;
+	text-decoration: none;
+}
+
+.filter-btn:hover {
+  background-color: #fbfcfb;
+  color: #323232;
+}
+
+.filter-btn:active {
+  background-color: #eaeaea;
+  box-shadow: inset 0 2px 1px #696969;
 }
 
 .catalog {
@@ -743,31 +818,45 @@ a.underlined:active {
 
 .pagination li {
 	display: inline-block;
-	min-width: 25px;
-	height: 25px;
+    vertical-align: middle;
 	margin: 0;
 	margin-right: 2px;
-	font-size: 16px;
-	line-height: 25px;
-	text-align: center;
-	vertical-align: middle;
-	border-radius: 50%;
 }
 
 .pagination a {
+    display: block;
+  	min-width: 25px;
+	height: 25px;
+  	font-size: 16px;
+	line-height: 25px;
 	text-decoration: none;
+  	border-radius: 50%;
+    text-align: center;
 }
 
-.pagination li:first-child {
-	text-indent: -10000px;
+.pagination a:hover {
+    background: rgba(255, 255, 255, 0.2);
+    color: #ffffff;
+}
+
+.pagination a:active,
+.pagination a.current {
+  background: #ffffff;
+  color: #323232;
+}
+
+.pagination li:first-child a {
 	margin-right: 4px;
 	background: url("../img/arrows.png") no-repeat 6px 5px;
 }
 
-.pagination li:last-child {
-	text-indent: -10000px;
+.pagination li:last-child a {
 	margin-left: 2px;
-	background: url("../img/arrows.png") no-repeat 9px -18px;
+	background: url("../img/arrows.png") no-repeat 9px -19px;
+}
+
+.pagination a.disabled {
+    	opacity: 0.2;
 }
 
 .site-footer .container {
@@ -797,23 +886,28 @@ a.underlined:active {
 }
 
 .social-btn-twit {
-	background: url("../img/twitter-icon.png") no-repeat 50% 50% content-box;
+	background: url("../img/twitter-icon.png") no-repeat 0 50% content-box;
 }
 
 .social-btn-inst {
-	background: url("../img/instagram-icon.png") no-repeat 50% 50% content-box;
+	background: url("../img/instagram-icon.png") no-repeat 0 50% content-box;
 }
 
 .social-btn-fb {
-	background: url("../img/facebook-icon.png") no-repeat 50% 50% content-box;
+	background: url("../img/facebook-icon.png") no-repeat 0 50% content-box;
 }
 
 .social-btn-vk {
-	background: url("../img/vkontakte-icon.png") no-repeat 50% 50% content-box;
+	background: url("../img/vkontakte-icon.png") no-repeat -1px -1px content-box;
 }
 
-.social-btn span {
-	display: none;
+.social-btn:hover {
+    opacity: 1;
+}
+
+.social-btn:active {
+  opacity: 0.8;
+  box-shadow: 0 2px 1px #888888 inset;
 }
 
 .footer-menu {
