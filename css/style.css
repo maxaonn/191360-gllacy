@@ -109,7 +109,7 @@ a.underlined:active {
 .header-logo {
 	float: left;
 	width: 154px;
-	margin-right: 14px;
+	margin-right: 10px;
 }
 
 .site-navigation {
@@ -129,12 +129,11 @@ a.underlined:active {
 	position: relative;
 	display: inline-block;
 	vertical-align: middle;
-	margin-right: 5px;
 }
 
 .site-navigation li a {
 	display: block;
-	padding: 6px 10px;
+	padding: 6px 13px;
 	border-radius: 15px;
 	font-weight: 700;
 	text-decoration: none;
@@ -404,6 +403,10 @@ a.underlined:active {
 	background-image: url("../img/bag-full-icon.png");
 	background-position: 16px 7px;
 	background-repeat: no-repeat;
+	color: #323232;
+}
+
+.btn-full-bag:hover {
 	color: #323232;
 }
 
@@ -785,6 +788,7 @@ a.underlined:active {
 .features b {
 	font-size: 24px;
 	line-height: 30px;
+	font-weight: 500;
 }
 
 .features-item {
@@ -1001,7 +1005,7 @@ a.underlined:active {
 .filter > form > div {
 	display: inline-block;
 	vertical-align: bottom;
-	margin-right: 16px;
+	margin-right: 12px;
 	margin-bottom: 10px;
 }
 
@@ -1031,6 +1035,7 @@ a.underlined:active {
 	font-family: "Roboto", "Arial", sans-serif;
 	font-size: 16px;
 	line-height: 18px;
+	font-weight: 500;
 	color: #ffffff;
 }
 
@@ -1049,10 +1054,6 @@ a.underlined:active {
 	border-radius: 20px;
 }
 
-.filter-sorting select {
-	padding: 7px 15px;
-}
-
 .filter .select-style {
 	width: 194px;
 	border-radius: 20px;
@@ -1061,8 +1062,9 @@ a.underlined:active {
 }
 
 .filter .select-style select {
-	width: 110%;
+	width: 130%;
 	padding: 9px 15px;
+	text-align: left;
 	border: none;
 	box-shadow: none;
 	background-color: transparent;
@@ -1105,7 +1107,7 @@ a.underlined:active {
 
 .range-toggle {
 	position: absolute;
-	top: 9px;
+	top: 7px;
 	width: 20px;
 	height: 20px;
 	background: #f8f7f4;
@@ -1115,11 +1117,11 @@ a.underlined:active {
 }
 
 .range-toggle-min {
-	left: 25px;
+	left: 33px;
 }
 
 .range-toggle-max {
-	left: 122px;
+	left: 131px;
 }
 
 .filter label {
@@ -1139,12 +1141,17 @@ a.underlined:active {
 	margin-right: 12px;
 }
 
-.filter input[type="checkbox"] + label {
-	margin-right: 25px;
+.filter input[type="radio"] + label {
+	margin-right: 15px;
 }
 
-.filter input[type="checkbox"]:last-of-type + label {
-	margin-right: 0;
+.filter input[type="checkbox"] + label {
+	margin-right: 23px;
+}
+
+.filter input[type="checkbox"]:last-of-type + label,
+ .filter input[type="radio"]:last-of-type + label{
+	margin-right: 5px;
 }
 
 .filter input[type="checkbox"] + label::before,
@@ -1238,7 +1245,7 @@ a.underlined:active {
 	float: right;
 	width: 300px;
 	min-height: 30px;
-	margin-bottom: 30px;
+	margin-bottom: 25px;
 	font-size: 0;
 	text-align: right;
 }
@@ -1290,6 +1297,16 @@ a.underlined:active {
 
 .pagination a.disabled {
 	opacity: 0.2;
+}
+
+.content-end {
+	clear: right;
+	height: 1px;
+	background-color: rgba(170, 170, 170, 0.3);
+	color: rgba(170, 170, 170, 0.3);
+	border: 0;
+	font-size: 0;
+	line-height: 0;
 }
 
 .site-footer .container {
@@ -1349,7 +1366,7 @@ a.underlined:active {
 	float: left;
 	width: 416px;
 	font-size: 13px;
-	line-height: 18px;
+	line-height: 16px;
 	font-weight: 400;
 }
 
@@ -1388,7 +1405,7 @@ a.underlined:active {
 	float: right;
 	width: 190px;
 	font-size: 12px;
-	line-height: 18px;
+	line-height: 16px;
 }
 
 .footer-copyright p {
@@ -1534,10 +1551,10 @@ a.underlined:active {
 	line-height: 13px;
 }
 
-::-webkit-input-placeholder {color:999999;font-size:16px;font-weight:400;}
-::-moz-placeholder {color:999999;font-size:16px;font-weight:400;}
-:-ms-input-placeholder {color:999999;font-size:16px;font-weight:400;}
-:-moz-placeholder {color:999999;font-size:16px;font-weight:400;}
+::-webkit-input-placeholder {color:#999999;font-size:16px;font-weight:400;}
+::-moz-placeholder {color:#999999;font-size:16px;font-weight:400;}
+:-ms-input-placeholder {color:#999999;font-size:16px;font-weight:400;}
+:-moz-placeholder {color:#999999;font-size:16px;font-weight:400;}
 
 :focus::-webkit-input-placeholder {color: transparent;}
 :focus::-moz-placeholder {color: transparent;}
