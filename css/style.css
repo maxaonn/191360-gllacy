@@ -223,7 +223,7 @@ a.underlined:active {
 .user-block {
 	position: relative;
 	float: right;
-	width: 270px;
+	width: 300px;
 	margin-bottom: 20px;
 	font-size: 16px;
 	line-height: 18px;
@@ -514,7 +514,7 @@ a.underlined:active {
 	position: absolute;
 	top: 65px;
 	right: 0;
-	width: 170px;
+	width: 200px;
 	text-align: right;
 }
 
