@@ -9,7 +9,7 @@
 	font-weight: 400;
 }
 
-body > input[type="radio"] {
+.wrap-toggle {
 	display: none;
 	margin: 0;
 	padding: 0;
@@ -57,16 +57,6 @@ body > input[type="radio"] {
 	font-size: 35px;
 	line-height: 41px;
 	font-weight: 700;
-}
-
-a {
-	color: #ffffff;
-	text-decoration: none;
-}
-
-a:hover,
-a:active {
-	color: #ffbc9e;
 }
 
 .underlined {
@@ -117,6 +107,22 @@ a.underlined:active {
 	width: 530px;
 	font-size: 16px;
 	line-height: 18px;
+}
+
+.site-navigation a,
+.footer-menu a,
+.footer-copyright a {
+	color: #ffffff;
+	text-decoration: none;
+}
+
+.site-navigation a:hover,
+.site-navigation a:active,
+.footer-menu a:hover,
+.footer-menu a:active,
+.footer-copyright a:hover,
+.footer-copyright a:active {
+	color: #ffbc9e;
 }
 
 .site-navigation > ul {
@@ -369,11 +375,17 @@ a.underlined:active {
 	padding-right: 24px;
 }
 
+.login-block p {
+	margin: 0;
+	padding: 0;
+}
+
 .login-block a {
 	color: #323232;
 	font-size: 13px;
 	line-height: 24px;
 	border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+	text-decoration: none;
 }
 
 .login-block a:hover,
@@ -982,6 +994,12 @@ a.underlined:active {
 	font-size: 14px;
 	line-height: 16px;
 	font-weight: 400;
+	color: #ffffff;
+}
+
+.breadcrumbs a:hover,
+.breadcrumbs a:active {
+	color: #ffbc9e;
 }
 
 .breadcrumbs a::after {
@@ -1272,6 +1290,7 @@ a.underlined:active {
 	text-decoration: none;
 	border-radius: 50%;
 	text-align: center;
+	color: #ffffff;
 }
 
 .pagination a:hover {
@@ -1378,6 +1397,7 @@ a.underlined:active {
 .footer-menu li {
 	position: relative;
 	display: inline-block;
+	vertical-align: baseline;
 	width: 180px;
 	padding-bottom: 5px;
 }
@@ -1504,7 +1524,6 @@ a.underlined:active {
 	width: 100%;
 }
 
-
 .modal-content input[type="text"]:hover,
 .modal-content textarea:hover {
 	border: 2px solid rgba(154, 154, 154, 0.52);
@@ -1522,7 +1541,6 @@ a.underlined:active {
 	margin-top: 25px;
 }
 
-/*стилизация полей ввода*/
 .input-holder {
 	position: relative;
 	margin: 0;
