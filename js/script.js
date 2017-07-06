@@ -7,6 +7,7 @@ var secondLine = popup.querySelector("[name=email]");
 
 link.addEventListener("click", function(evt) {
 		evt.preventDefault();
+    popup.classList.remove("modal-window-shaker");
 		popup.classList.add("modal-window-open");
 		firstLine.focus();
 		}
