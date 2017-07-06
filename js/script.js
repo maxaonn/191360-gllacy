@@ -30,11 +30,9 @@ form.addEventListener("submit", function(evt) {
 
 window.addEventListener("keydown", function(evt) {
   if (event.keyCode === 27) {
-    if (popup.classList.contains("modal-window-open") {
+    if (popup.classList.contains("modal-window-open")) {
           popup.classList.remove("modal-window-open");
           popup.classList.remove("modal-window-shaker");
-        };
+          };
+      };
     };
-  };
-
-)
