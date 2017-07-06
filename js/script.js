@@ -35,4 +35,4 @@ window.addEventListener("keydown", function(evt) {
           popup.classList.remove("modal-window-shaker");
           };
       };
-    };
+    });
