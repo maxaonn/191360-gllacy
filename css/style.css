@@ -1449,6 +1449,10 @@ a.underlined:active {
 	left: 50%;
 }
 
+.modal-window-open {
+  display: block;
+}
+
 .modal-overlay {
 	width: 100%;
 	height: 100%;
