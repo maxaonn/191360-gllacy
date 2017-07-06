@@ -1,4 +1,4 @@
-var link = document.querySelector(".location-details a");
+var link = document.querySelector(".js-modal-window-opener");
 var popup = document.querySelector(".modal-window");
 var close = document.querySelector(".modal-content-close");
 var form = popup.querySelector("form");
