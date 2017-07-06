@@ -24,4 +24,4 @@ form.addEventListener("submit", function(evt) {
 				evt.preventDefault();
 				popup.classList.add("modal-window-shaker");
 		};
-}
+});
