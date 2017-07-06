@@ -1454,8 +1454,8 @@ a.underlined:active {
 }
 
 @keyframes shaker {
-    0%, 20%, 40%, 60%, 80%, 100% {transformX(-10px);}
-    10%, 30%, 50%, 70%, 90% {transformX(10px);}
+    0%, 20%, 40%, 60%, 80%, 100% {translateX(-10px);}
+    10%, 30%, 50%, 70%, 90% {translateX(10px);}
 }
 
 .modal-window-shaker {
