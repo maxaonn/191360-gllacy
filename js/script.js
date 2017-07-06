@@ -7,7 +7,6 @@ var secondLine = popup.querySelector("[name=email]");
 
 link.addEventListener("click", function(evt) {
 		evt.preventDefault();
-    popup.classList.remove("modal-window-shaker");
 		popup.classList.add("modal-window-open");
 		firstLine.focus();
 		}
@@ -16,12 +15,26 @@ link.addEventListener("click", function(evt) {
 close.addEventListener("click", function(evt) {
 		evt.preventDefault();
 		popup.classList.remove("modal-window-open");
+    popup.classList.remove("modal-window-shaker");
 		}
 );
 
 form.addEventListener("submit", function(evt) {
 		if ( !firstLine.value || !secondLine.value) {
 				evt.preventDefault();
-				popup.classList.add("modal-window-shaker");
+				popup.classList.remove("modal-window-shaker");
+        popup.offsetWidth = popup.offsetWidth;
+        popup.classList.add("modal-window-shaker");
 		};
 });
+
+window.addEventListener("keydown", function(evt) {
+  if (event.keyCode === 27) {
+    if (popup.classList.contains("modal-window-open") {
+          popup.classList.remove("modal-window-open");
+          popup.classList.remove("modal-window-shaker");
+        };
+    };
+  };
+
+)
