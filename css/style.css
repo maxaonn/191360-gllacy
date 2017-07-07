@@ -935,22 +935,20 @@ a.underlined:active {
 }
 
 .location {
+  position: relative;
 	width: 1200px;
 	min-height: 428px;
 	margin: 0 auto;
 	background-color: #ffffff;
-	background-image: url("../img/map.jpg");
-	background-repeat: no-repeat;
-	background-position: -25px -110px;
 }
 
 .location-details {
-	float: right;
+	position: absolute;
+  right: 27px;
+  top: 63px;
 	width: 302px;
 	height: 305px;
 	box-sizing: border-box;
-	margin-bottom: 63px;
-	margin-top: 63px;
 	padding: 30px 25px;
 	background-color: #ffffff;
 	border-radius: 10px;
